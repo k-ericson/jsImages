@@ -10,7 +10,7 @@ function addGuy(holderID, url) {
     counter++;
     names.push(newname);
     let image = document.createElement('img');
-    image.setAttribute('crossorigin', 'anonymous');
+    //image.setAttribute('crossorigin', 'anonymous');
     let downloadingImage = new Image();
     downloadingImage.crossOrigin = "Anonymous";
     const canvas = document.createElement('canvas');
@@ -26,6 +26,8 @@ function addGuy(holderID, url) {
 	ctx.drawImage(this, 0, 0, canvas.width, canvas.height);
 	const uri = canvas.toDataURL();
 	image.src = uri;
+//	image.src = this.src;
+//	outer.appendChild(image);
     };
     downloadingImage.src=url;
 }
