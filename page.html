@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <script type='text/javascript'  src="helper.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <body>
+    <h2>Image Page</h2>
+
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+      Show Date and Time.</button>
+    <p id="demo"></p>
+    <input type="text" id="imgURL">
+    <button type="button" onclick="addGuy('picArea', document.getElementById('imgURL').value)");>Add Guy</button>
+    <script>
+      $( function() {
+	  $("#picArea").sortable();
+      });
+    </script>
+    
+    <div id="picArea"></p>
+  </body>
+
+</html>
