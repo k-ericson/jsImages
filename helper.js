@@ -12,6 +12,7 @@ function addGuy(holderID, url) {
     let image = document.createElement('img');
     image.setAttribute('crossorigin', 'anonymous');
     let downloadingImage = new Image();
+    downloadingImage.crossOrigin = "Anonymous";
     const canvas = document.createElement('canvas');
     const ctx = canvas.getContext('2d');
     //let text = document.createTextNode(newname);
