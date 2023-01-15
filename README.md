@@ -1,8 +1,8 @@
 # Image Viewer Webpage
 
-* Uses HTML, JavaScript, jQuery
+* Uses HTML, JavaScript, jQuery, CSS
 
-Goals:
+## Features:
 - Load an image from URL
   * makes use of HTML5 [Canvas](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API#browser_compatibility) for later image manipulation, requires origin servers to use appropriate CORS header, will otherwise result in tainted canvas exceptions more info here: [Allowing cross-origin use of images and canvas](https://developer.mozilla.org/en-US/docs/Web/HTML/CORS_enabled_image).
   * known good links for testing:
