@@ -1,6 +1,5 @@
 img {
-  /*width: 600px;
-  height: 450px;*/
+  /* on longer asynchronous loads, show loading image */
   background: url(loading.gif) 50% no-repeat;
   border: 1px solid black;
   border-radius: 5px;
@@ -15,14 +14,13 @@ img {
   left: 0;
   top: 0;
   width: 100%; /* Full width */
-  height: 95%; /* Full height */
-  overflow-y: auto;
-  overflow: auto; /* Enable scroll if needed */
+  height: 95%; /* Full height (small offset from top)*/
+  overflow-y: auto; /* sroll in y if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-/* Modal Content */
+/* Modal Content - actually holds image */
 .modal-content {
   background-color: #fefefe;
   margin: auto;
@@ -31,7 +29,7 @@ img {
   //width: 100%;
 }
 
-/* The Close Button */
+/* The Close 'Button' */
 .close {
   color: #aaaaaa;
   float: right;
@@ -39,6 +37,7 @@ img {
   font-weight: bold;
 }
 
+/* makes sure it accts like a button */
 .close:hover,
 .close:focus {
   color: #000;

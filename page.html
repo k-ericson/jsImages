@@ -3,7 +3,8 @@
   <head>
     <link rel="stylesheet" href="styles.css">
   </head>
-  
+  <!-- needed scripts, jquery for movable images, ease of access
+       helper script file for main logic -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
   <script type='text/javascript'  src="helper.js"></script>
@@ -11,14 +12,17 @@
     <h2>Image Page</h2>
 
      <input type="text" id="imgURL">
-    <button type="button" onclick="addGuy('picArea', document.getElementById('imgURL').value)");>Add Guy</button>
+     <button type="button" onclick="addImage('picArea', document.getElementById('imgURL').value)");>Add Image</button>
+     <button type="button" id="gallery-blue" style="float: right;">Blue Channel +100</button>
+     <!-- allows images to be dragged around -->
     <script>
       $( function() {
 	  $("#picArea").sortable();
       });
     </script>
-    
     <div id="picArea"></div>
+    <!-- modal for opening up an image.  Will open full page width or
+	 original width, whichever is smaller -->
     <div id="modalArea" class="modal">
       <div id="modalContent" class="modal-content">
 	<span class="menu"><button type="button" id="blueButton">blue channel +100</button><span class="close">&times;</span></span>
@@ -26,5 +30,4 @@
       </div>
     </div> 
   </body>
-
 </html>
