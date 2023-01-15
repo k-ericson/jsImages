@@ -112,7 +112,8 @@ function bluify(image) {
     cvs.height = height;
     
     ctx.drawImage(image, 0, 0, width, height);
-    
+
+    // not efficient if we're updating multiple pixel values
     var iData = ctx.getImageData(0, 0, width, height);
     var data = iData.data;
     for (var i = 0; i < data.length; i += 4) {
